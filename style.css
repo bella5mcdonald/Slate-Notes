@@ -1,0 +1,257 @@
+/* CSS files add styling rules to your content */
+
+body {
+  font-family: oswald;
+  /*background-color:#333335; */
+  background-image:url("https://www.publicdomainpictures.net/pictures/210000/velka/black-stone-slate-background.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+h1 {
+color:black;
+text-align:center;
+font-size:90px
+}
+
+/*Top Banner of the website that says "Slate"*/
+#banner {
+  background-color:rgba(182,185,193,.8);
+/*   position:fixed; */
+  height:100px;
+  width:100%;
+  border:0px;
+  top:0px;
+  left:0px;
+  bottom:0px;
+  right:0px;
+  box-shadow: 0px 10px 10px rgba(0, 0, 0, .4);
+}
+
+/* h6 {
+  text-align:right;
+  color:black;
+  font-size:30px;
+  position:relative;
+  top:-100px;
+  right:20px
+} */
+  
+label{
+  color:white;
+}
+
+/*The .login class affects the <form> element*/
+.login {
+  width:350px;
+  margin:auto;
+  text-align:center;
+  text-shadow:1px 1px black;
+}
+
+/*the #rememberMe ID is used for the "Remember Me" checkbox */
+#rememberMe {
+  top:9px;
+}
+#recentnotes {
+  position:relative;
+  top:15px
+}
+.folder {
+  position:relative;
+  color:black;
+  width:250px;
+}
+
+/*this is the folder button section*/
+/* #mathnotes {
+  position: fixed;
+  top:200px;
+  left:50px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .4);
+}
+#sciencenotes {
+  position
+: fixed;
+  top:200px;
+  left:300px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .4);
+}
+#englishnotes {
+  position: fixed;
+  top:200px;
+  left:600px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .4);
+}
+#spanishnotes {
+  position: fixed;
+  top:200px;
+  left:900px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .4);
+} 
+
+#settingsGear {
+    box-shadow: 3px 3px 3px rgba(0, 0, 0, .4);
+} */
+
+.btn-primary{
+  font-size:36px; 
+  text-align:center;
+  background-color:black;
+  border: solid;
+  border-color: black;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .4);
+}
+
+/* .btn {
+  position:relative;
+  left:1750px;
+  top:-145px;
+  color: black;
+  font-size:20px;
+} */
+
+/*this is the folder section styling*/
+#precalcnotes {
+  width:1000px;
+  position: relative;
+  left:200px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .4)
+}
+#anatomynotes {
+  width:1000px;
+  position: relative;
+  left:200px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .4)
+}
+#frenchnotes {
+  width:1000px;
+  position: relative;
+  left:200px; 
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .4)
+}
+#writingnotes {
+  width:1000px;
+  position: relative;
+  left:200px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .4)
+}
+#bionotes {
+  width:1000px;
+  position: relative;
+  left:200px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .4)
+}
+#chemnotes {
+  width:1000px;
+  position: relative;
+  left:200px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .4)
+}
+#historynotes {
+  width:1000px;
+  position: relative;
+  left:200px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .4)
+}
+#marketnotes {
+  width:1000px;
+  position: relative;
+  left:200px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .4)
+}
+#engineernotes {
+  width:1000px;
+  position: relative;
+  left:200px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .4)
+}
+#compscinotes {
+  width:1000px;
+  position: relative;
+  left:200px;
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .4)
+}
+#mathnotes {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .4);
+}
+#sciencenotes {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .4);
+}
+#englishnotes {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .4);
+}
+#spanishnotes {
+  box-shadow: 3px 3px 3px rgba(0, 0, 0, .4);
+} 
+/*this is where folder styling ends*/
+
+.search-container input {
+  width:1100px;
+}
+
+
+.notes-display{
+  padding-top:20px;
+  padding-bottom:20px;
+  margin:auto;
+  width:80%;
+  display:block;
+}
+
+/* The Overlay (background) */
+.overlay {
+    /* Height & width depends on how you want to reveal the overlay (see JS below) */    
+    height: 100%;
+    width: 100%;
+    position: fixed; /* Stay in place */
+    z-index: 2; /* Sit on top */
+    left: 0;
+    top: 0;
+    background-color: rgb(0,0,0); /* Black fallback color */
+    background-color: rgba(0,0,0, 0.9); /* Black w/opacity */
+    overflow-x: hidden; /* Disable horizontal scroll */
+    transition: 0.5s; /* 0.5 second transition effect to slide in or slide down the overlay (height or width, depending on reveal) */
+}
+
+/* Position the content inside the overlay */
+.overlay-content {
+    position: relative;
+    top: 25%; /* 25% from the top */
+    width: 100%; /* 100% width */
+    text-align: center; /* Centered text/links */
+    margin-top: 30px; /* 30px top margin to avoid conflict with the close button on smaller screens */
+}
+
+/* The navigation links inside the overlay */
+.overlay a {
+    padding: 8px;
+    text-decoration: none;
+    font-size: 36px;
+    color: #818181;
+    display: block; /* Display block instead of inline */
+    transition: 0.3s; /* Transition effects on hover (color) */
+}
+
+/* When you mouse over the navigation links, change their color */
+.overlay a:hover, .overlay a:focus {
+    color: #f1f1f1;
+}
+
+/* Position the close button (top right corner) */
+.overlay .closebtn {
+    position: absolute;
+    top: 20px;
+    right: 45px;
+    font-size: 60px;
+}
+
+/* When the height of the screen is less than 450 pixels, change the font-size of the links and position the close button again, so they don't overlap */
+@media screen and (max-height: 450px) {
+    .overlay a {font-size: 20px}
+    .overlay .closebtn {
+        font-size: 40px;
+        top: 15px;
+        right: 35px;
+    }
+}

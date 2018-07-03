@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Slate - Opened Notes</title>
+    
+    <!--Don't touch anything between this comment...-->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <script src="/script.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="https://cdn.glitch.com/bcaddb24-a6b3-485d-8c62-467a9b3d4f33%2Fapple-touch-icon.png?1530206450048">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://cdn.glitch.com/bcaddb24-a6b3-485d-8c62-467a9b3d4f33%2Ffavicon-32x32.png?1530206493583">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://cdn.glitch.com/bcaddb24-a6b3-485d-8c62-467a9b3d4f33%2Ffavicon-16x16.png?1530206489151">
+    <link rel="manifest" href="https://cdn.glitch.com/bcaddb24-a6b3-485d-8c62-467a9b3d4f33%2Fsite.webmanifest?1530206510219">
+    <link rel="mask-icon" href="https://cdn.glitch.com/bcaddb24-a6b3-485d-8c62-467a9b3d4f33%2Fsafari-pinned-tab.svg?1530206523540" color="#6b6b6b">
+    <meta name="msapplication-TileColor" content="#363434">
+    <meta name="theme-color" content="#ffffff">
+    
+    <!--...And this one -->
+    
+     <nav class="navbar navbar-light navbar-expand-lg" style="background-color:rgba(182,185,193,.85); height:80px;">
+      <a class="navbar-brand" href="my_notes.html" style="font-size:65px">Notes</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNavDropdown">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Log Out</a>
+          </li>
+          <li class="nav-item">
+            <button type="submit" id="addnotesbutton"><i class="fa fa-plus-square" aria-hidden="true"></i></button>
+            <button style="cursor:pointer" class="btn" id="settingsGear" onclick= "openNav()"> <i class="fa fa-gear" ></i></button>
+          </li>
+        </ul>
+      </div>
+    </nav>   
+    
+<!--   <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#">Navbar w/ text</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarText">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Features</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Pricing</a>
+      </li>
+    </ul>
+    <span class="navbar-text">
+      Navbar text with an inline element
+    </span>
+  </div>
+</nav> -->
+  </head>
+  
+  <body>
+    
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <a href="Math_notes.html"><input type="image" href="math_notes.html" src="https://cdn.glitch.com/bcaddb24-a6b3-485d-8c62-467a9b3d4f33%2Fnotes.png?1530279579854" name="mathbtn" class="btTxt submit" id="mathbtn" style="width:400px; height:400px"/> </a>
+        </div>
+        <div class="col">
+          <a href="Math_notes.html"><input type="image" href="math_notes.html" src="https://cdn.glitch.com/bcaddb24-a6b3-485d-8c62-467a9b3d4f33%2Fnotes.png?1530279579854" name="mathbtn1" class="btTxt submit" id="mathbtn1" style="width:400px; height:400px"/></a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col">
+           <a href="Math_notes.html"> <input type="image" href="math_notes.html" src="https://cdn.glitch.com/bcaddb24-a6b3-485d-8c62-467a9b3d4f33%2Fnotes.png?1530279579854" name="mathbtn2" class="btTxt submit" id="mathbtn2" style="width:400px; height:400px"/> </a>    
+        </div>
+        <div class="col">
+          <a href="Math_notes.html"><input type="image" href="math_notes.html" src="https://cdn.glitch.com/bcaddb24-a6b3-485d-8c62-467a9b3d4f33%2Fnotes.png?1530279579854" name="mathbtn3" class="btTxt submit" id="mathbtn3" style="width:400px; height:400px"/> </a>
+        </div>
+      </div>
+    </div>
+
+    
+    <!-- The overlay -->
+    <div id="myNav" class="overlay">
+
+  <!-- Button to close the overlay navigation -->
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+
+  <!-- Overlay content -->
+      <div class="overlay-content">
+        <a href="About_Us.html">About Us</a>
+        <a href="#">Account Setting</a>
+        <a href="mailto:aaronliang12@gmail.com?Subject=Hello%20again">Contact Us</a>
+        <a href="https://www.facebook.com/zuck" class="btn-social btn-outline"><i class="fa fa-fw fa-facebook"></i></a>
+        <a href="https://twitter.com/OutterSpaceSWAG" class="btn-social btn-outline"><i class="fa fa-fw fa-twitter"></i></a>
+        <a href="https://www.instagram.com/boonkgang" class="btn-social btn-outline"><i class="fa fa-fw fa-instagram"></i></a>
+      </div>
+    </div>
+
+<!-- Use any element to open/show the overlay navigation menu -->
+    <span onclick="openNav()">open</span>
+    
+    <script>document.getElementById("myNav").style.height = "0%"</script>
+        
+  </body>
+</html>
